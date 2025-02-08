@@ -1,0 +1,122 @@
+<style>
+/* Navbar Link Text Color */
+.navbar-nav .nav-link {
+    color: #3a0303; /* Default text color for the navbar links */
+    font-weight: 500; /* Optional: Make the text slightly bolder */
+    text-transform: uppercase; /* Optional: Make text uppercase for a clean look */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+
+/* Hover Effect for Navbar Links */
+.navbar-nav .nav-link:hover {
+    color: #fff; /* Change text color to white on hover */
+    background-color: #8d2b34; /* Change background color on hover */
+    border-radius: 4px; /* Optional: Add rounded corners on hover */
+}
+
+/* Dropdown Menu Text Color */
+.dropdown-menu .dropdown-item {
+    color: #333; /* Default color for dropdown items */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+
+/* Hover Effect for Dropdown Items */
+.dropdown-menu .dropdown-item:hover {
+    background-color: #8d2b34; /* Background color on hover */
+    color: #fff; /* Change text color to white on hover */
+}
+
+/* Navbar Dropdown Hover (to display the dropdown menu) */
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+</style>
+<header class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        <!-- Logo -->
+        <div class="logo-container">
+            <a href="/" class="logo">
+                <img src="SGA_LOGO.png" alt="Logo" class="img-fluid" />
+            </a>
+        </div>
+
+        <!-- Navbar Toggler (Hamburger Menu) -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar Links -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">ABOUT SGA</a>
+                </li>
+                <li class="nav-item">
+                    <a href="sga-scan-report.html" class="nav-link">SGA SCAN REPORT</a>
+                </li>
+                <li class="nav-item">
+                    <a href="life-coach.html" class="nav-link">LIFE COACH</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a
+                      href="innate-abilities.html"
+                      class="nav-link dropdown-toggle"
+                      id="navbarDropdown"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      INNATE ABILITIES
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a href="innate-abilities.html">Innate Abilities:</a>
+                      <li>
+                        <a href="innate-physical-abilities.html" class="dropdown-item"
+                          >Physical Abilities</a
+                        >
+                      </li>
+                      <li>
+                        <a href="innate-mental-abilities.html" class="dropdown-item"
+                          >Mental Abilities</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="innate-emotional-abilities.html"
+                          class="dropdown-item"
+                          >Emotional Abilities</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="innate-intellectual-abilities.html"
+                          class="dropdown-item"
+                          >Intellectual Abilities</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="innate-spiritual-abilities.html"
+                          class="dropdown-item"
+                          >Spiritual Abilities</a
+                        >
+                      </li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="joy-school.html" class="nav-link">JOY SCHOOL</a>
+                </li>
+                <li class="nav-item">
+                    <a href="technical-courses.html" class="nav-link">TECHNICAL COURSES</a>
+                </li>
+                <li class="nav-item">
+                    <a href="join-as-associate.html" class="nav-link">JOIN AS ASSOCIATE</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</header>

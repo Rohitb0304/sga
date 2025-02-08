@@ -1,0 +1,111 @@
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+<style>
+/* General Footer Styles */
+footer {
+    background-color: #bbbbbb;  /* Dark background */
+    color: #1b1b1b;                /* White text */
+    padding: 40px 0;            /* Padding around the footer */
+    text-align: center;         /* Default text alignment to center */
+}
+
+/* Logo Styling */
+.footer-logo {
+    max-width: 400px;           /* Limit logo size */
+    width: 100%;
+}
+
+/* Social Media Icons */
+footer .mx-2 {
+    font-size: 24px;           /* Icon size */
+    color: #000;               /* Icon color */
+    transition: color 0.3s ease;
+}
+
+footer .mx-2:hover {
+    color: #f1c40f;            /* Gold on hover */
+}
+
+/* Footer Divider */
+.footer-divider {
+    border-top: 3px dotted #1b1b1b;  /* Dotted line style */
+    margin-top: 20px;                 /* Spacing above the divider */
+    width: 100%;                      /* Make it full width */
+    margin-left: 0;                   /* Ensure it stretches to the left edge */
+    margin-right: 0;                  /* Ensure it stretches to the right edge */
+}
+
+
+/* Footer Links */
+footer a {
+    text-decoration: none;
+    color: #464646;
+}
+
+footer a:hover {
+    color: #f1c40f;  /* Hover effect */
+}
+
+footer .footer-link {
+    font-weight: bold;
+    margin: 0 5px;  /* Space between links */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    footer {
+        padding: 30px 0;  /* Reduce padding for smaller screens */
+    }
+
+    .footer-logo {
+        max-width: 200px;  /* Smaller logo on mobile */
+    }
+
+    footer .mx-2 {
+        font-size: 20px;  /* Smaller icons on mobile */
+    }
+
+    footer p {
+        font-size: 12px;  /* Smaller text for mobile */
+    }
+}
+
+
+</style>
+    <footer>
+        <div class="container">
+            <!-- First Row: Logo and Social Media Links -->
+            <div class="row align-items-center">
+                <!-- Logo on the left -->
+                <div class="col-12 col-md-6 text-center text-md-left">
+                    <img src="SGA_LOGO.png" alt="Sai Global Academy Logo" class="footer-logo">
+                </div>
+                
+                <!-- Social Media Links on the right -->
+                <div class="col-12 col-md-6 text-center text-md-right">
+                    <a href="#" class="mx-2"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="mx-2"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="mx-2"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="mx-2"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+    
+            <!-- Dotted Line Partition -->
+            <div class="row mt-4">
+                <div class="col-12">
+                    <hr class="footer-divider">
+                </div>
+            </div>
+    
+            <!-- Copyright Info -->
+            <div class="row mt-4 text-center">
+                <div class="col-12">
+                    <p>&copy; 2025 Sai Global Academy. All Rights Reserved.</p>
+                    <p>
+                        <a href="/terms-of-use" class="footer-link">Terms of Use</a> | 
+                        <a href="/privacy-policy" class="footer-link">Privacy Policy</a> | 
+                        <a href="/cookie-policy" class="footer-link">Cookie Policy</a>
+                    </p>                    
+                </div>
+            </div>
+        </div>
+    </footer>
