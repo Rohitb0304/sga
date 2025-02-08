@@ -1,0 +1,1067 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa; /* Light Gray Background */
+    color: #343a40; /* Dark Text */
+    margin: 0;
+    padding: 0;
+}
+
+section{
+    margin-bottom: 60px;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(
+            rgba(0, 0, 0, 0.3), 
+            rgba(0, 0, 0, 0.3)
+        ),
+        url("../static/images/Homepage-Banner.png") no-repeat center/cover;
+    color: #fff;
+    height: 60vh; /* Default height for larger screens */
+    text-align: center;
+    padding: 130px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.hero-content {
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 200px; /* You can tweak this based on your design needs */
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    margin: 20px 0;
+    font-size: 1.2rem;
+}
+
+.hero .btn-primary {
+    background: #ff5722;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.hero .btn-primary:hover {
+    background-color: #e64a19;
+}
+
+/* Add spacing after hero section */
+.hero + section {
+    padding-top: 60px;
+}
+
+/* Add space below hero section */
+.hero {
+    padding-bottom: 60px;
+}
+
+/* Mobile-First Responsive Adjustments */
+@media (max-width: 768px) {
+    .hero {
+        height: 30vh; /* Reduce height on smaller screens */
+        padding: 60px 20px; /* Reduce top/bottom padding */
+    }
+
+    .hero h1 {
+        font-size: 1.8rem; /* Make the heading a bit smaller */
+    }
+
+    .hero p {
+        font-size: 1rem; /* Reduce paragraph text size */
+    }
+
+    .hero-content {
+        margin-top: 100px; /* Adjust margin-top to keep content readable */
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        height: 30vh; /* Further reduce height for very small screens */
+        padding: 40px 10px; /* Less padding on small screens */
+    }
+
+    .hero h1 {
+        font-size: 1.5rem; /* Make the heading smaller */
+    }
+
+    .hero p {
+        font-size: 0.9rem; /* Adjust paragraph text for mobile */
+    }
+
+    .hero-content {
+        margin-top: 80px; /* Adjust margin-top for smaller screens */
+    }
+}
+
+/* Lighter Gradient Background for Underperformance Section */
+.bg-gradient-custom {
+    background: linear-gradient(to right, #8e44ad, #6c5ce7, #74b9ff); /* Lighter gradient with purple, blue, and light blue */
+    padding: 50px 0;
+}
+
+/* Section Heading Styling */
+.section-header {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #fff; /* White color for the heading */
+}
+
+.section-header i {
+    font-size: 2.5rem;
+    margin-right: 15px;
+    vertical-align: middle;
+    color: #f39c12; /* Gold/yellow color for icons */
+}
+
+/* Highlighted Text */
+.highlight {
+    color: #d98600; /* Gold/yellow for highlighted text */
+    font-weight: 700;
+}
+
+/* Centering the Cards */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+/* Additional Styles */
+.solution-card {
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    text-align: center; /* Ensure text inside cards is centered */
+}
+
+.solution-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Optional: Custom image styling */
+img {
+    margin-top: 20px; /* Adds space between the paragraph and the image */
+    padding: 20px; /* Padding around the image */
+    border-radius: 30px; /* Round corners */
+    width: 55%; /* Default width for larger screens */
+    max-width: 60%; /* Ensures the image doesn't exceed its container width */
+    display: block; /* Ensure it behaves as a block element */
+    margin-left: auto;
+    margin-right: auto; /* Centers the image horizontally */
+}
+
+.solution-header{
+    color: #007bff;
+    font-size: 2.4rem;
+}
+/* Responsive adjustments for smaller screens */
+@media (max-width: 1024px) {
+    img {
+        width: 80%; /* Increase width for medium screens */
+        padding: 20px; /* Slightly smaller padding for medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    img {
+        width: 95%; /* Slightly increase width on smaller screens */
+        padding: 15px; /* Smaller padding for small screens */
+    }
+}
+
+@media (max-width: 576px) {
+    img {
+        width: 100%; /* Full width on extra small screens */
+        padding: 10px; /* Even smaller padding for mobile */
+    }
+}
+
+
+
+/* Card Header Styling */
+.solution-card .card-header {
+    background-color: #34495e; /* Darker color for the header */
+    color: #f39c12; /* Gold/yellow color for card header */
+    font-size: 1.2rem;
+    padding: 20px;
+    font-weight: bold;
+    text-decoration: underline; /* Underline the header */
+    text-align: center;
+}
+
+/* Card Body Styling */
+.solution-card .card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center-align the content */
+    justify-content: center; /* Center vertically */
+    font-size: 1rem;
+    color: #555;
+    padding: 20px;
+}
+
+.solution-card .card-body p {
+    font-size: 1rem;
+    color: #777;
+}
+
+/* Icon Styling */
+.solution-card .card-body i {
+    font-size: 2.5rem; /* Larger icons for emphasis */
+    margin-bottom: 15px; /* Space between the icon and the heading */
+    color: #e67e22; /* Warm orange color for icons */
+}
+
+/* Call to Action Button Styling */
+.cta-btn {
+    background-color: #f39c12; /* Gold color for the button */
+    color: white;
+    font-size: 1.25rem;
+    padding: 12px 30px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    margin-top: 40px;
+    display: inline-block;
+    text-align: center;
+}
+
+.icon {
+    width: 24px; /* Adjust to the size you want */
+    height: 24px; /* Ensure the height and width are equal for uniformity */
+    margin-right: 10px; /* Space between the icon and text */
+    vertical-align: middle; /* Align the icon vertically with the text */
+  }
+  .card-body h5 {
+    display: flex; /* Use flexbox for horizontal alignment */
+    align-items: center; /* Vertically align the icon and text */
+  }
+  
+
+.cta-btn:hover {
+    background-color: #e67e22; /* Slightly darker shade on hover */
+}
+
+/* Solution Section Styling */
+.bg-light-custom {
+    background-color: #f8f9fa; /* Light gray background for solution section */
+    padding: 40px 0;
+}
+
+/* Responsive Design Adjustments */
+@media (max-width: 768px) {
+    .section-header {
+        font-size: 2rem;
+    }
+
+    .cta-btn {
+        font-size: 1.1rem;
+        padding: 10px 20px;
+    }
+
+    .solution-card .card-body p {
+        font-size: 0.9rem;
+    }
+
+    .solution-card .card-header {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .section-header {
+        font-size: 1.5rem;
+    }
+
+    .cta-btn {
+        font-size: 1rem;
+        padding: 8px 16px;
+    }
+
+    .solution-card .card-body p {
+        font-size: 0.85rem;
+    }
+}
+
+
+
+
+/* Ocean Blue Section */
+.image-text-section {
+    background-color: #2a4d74; /* Updated background color to a more subtle deep blue */
+    color: white;
+    padding: 40px 20px; /* Increased padding for bigger section */
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+    text-align: left; /* Left-align text for all screen sizes */
+    position: relative;
+}
+
+/* Container */
+.image-text-section .container {
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    align-items: flex-start; /* Left-align content */
+    justify-content: center;
+    max-width: 1200px; /* Limit the max width of the container */
+    margin: 0 auto; /* Center the container within the section */
+}
+
+/* Image Container */
+.image-container {
+    padding-bottom: 20px; /* Add padding below the image */
+    text-align: center; /* Center the image */
+    width: 100%; /* Ensure the image container takes full width */
+}
+
+.image-container img {
+    width: 100%; /* Ensure the image takes full width */
+    max-width: 1200px; /* Ensure image doesn't exceed the max width */
+    height: auto; /* Ensures image maintains aspect ratio */
+    border-radius: 10px;
+    object-fit: cover; /* This will crop and center the image */
+}
+
+/* Text Container */
+.text-container {
+    padding-left: 0; /* Remove left padding */
+    max-width: 1200px; /* Limit the width of the text container */
+    text-align: left; /* Ensure left-aligned text */
+    width: 100%; /* Make sure it takes full width */
+    margin-top: 20px; /* Add some space between the image and text */
+}
+
+/* Title */
+.text-container h2 {
+    font-family: 'Lora', serif; /* Elegant serif font for a more sophisticated feel */
+    font-size: 2rem; /* Smaller title for better readability */
+    margin-bottom: 20px;
+    line-height: 1.4;
+    color: #fff;
+    text-transform: uppercase; /* Uppercase for a clean modern look */
+    font-weight: 600;
+    letter-spacing: 1px; /* Less spacing for a more compact look */
+}
+
+/* List Styles */
+.text-container ul {
+    list-style: none;
+    padding-left: 0;
+    font-size: 1.1rem; /* Smaller font size for list items */
+    font-family: "Roboto", sans-serif; /* Clear, modern font */
+    line-height: 1.6;
+    color: #f0f0f0; /* Lighter color for readability */
+}
+
+/* List Item Styles */
+.text-container ul li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px; /* Reduce spacing between list items */
+    gap: 10px;
+    font-weight: 500; /* Slightly bold text for items */
+}
+
+/* Icon Styling */
+.text-container ul li i {
+    font-size: 1.5rem; /* Smaller icons */
+    color: #ffcc00; /* Golden color for icons */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    /* Stack the content vertically for small screens */
+    .image-text-section {
+        padding: 40px 15px; /* Adjust padding for smaller screens */
+    }
+
+    .container {
+        flex-direction: column;
+        text-align: left; /* Ensure left-aligned text */
+    }
+
+    .text-container {
+        padding: 0;
+        max-width: 100%; /* Allow text container to expand on smaller screens */
+        text-align: left; /* Ensure left alignment on mobile */
+    }
+
+    .text-container h2 {
+        font-size: 1.8rem; /* Slightly smaller heading on mobile */
+    }
+
+    .text-container ul li {
+        font-size: 1rem; /* Reduce font size for mobile */
+    }
+
+    .image-container img {
+        width: 100%; /* Make the image take up full width on mobile */
+        max-width: none; /* Remove the max-width constraint for mobile */
+        margin-bottom: 20px; /* Add space below image */
+    }
+}
+
+@media (max-width: 480px) {
+    /* Adjustments for very small screens */
+    .text-container h2 {
+        font-size: 1.6rem; /* Make heading even smaller for very small screens */
+    }
+
+    .text-container ul li {
+        font-size: 0.95rem; /* Further reduce font size for very small screens */
+    }
+}
+      
+
+    
+/* Introduction Section */
+.intro {
+    background: linear-gradient(to right, #005c99, #00b3d1); /* Softer gradient with deeper blues */
+    color: white;
+    padding: 50px 20px; /* Increased padding for more space */
+    text-align: center;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1); /* Softer shadow for elegance */
+    position: relative;
+    overflow: hidden;
+    font-family: 'Lora', serif; /* Elegant serif font for a more refined look */
+    letter-spacing: 1px;
+}
+
+/* Floating effect behind text */
+.intro::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 200%;
+    height: 200%;
+    background: rgba(255, 255, 255, 0.1);
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    animation: float 7s ease-in-out infinite; /* Slow down the animation for a more relaxed effect */
+}
+
+/* Heading Style */
+.intro h2 {
+    font-size: 3.2rem; /* Slightly reduced size for better readability */
+    font-weight: 600; /* Lighter weight for elegance */
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    animation: fadeInUp 1s ease-out;
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.3); /* Gentle shadow to lift the text */
+}
+
+/* Hover effect on heading */
+.intro h2:hover {
+    color: #ffcc00; /* Soft gold color on hover */
+    text-shadow: 0 4px 10px rgba(0, 0, 0, 0.4); /* More pronounced text-shadow for hover effect */
+}
+
+/* Paragraph Style */
+.intro p {
+    font-size: 1.8rem; /* Reduced font size for paragraph */
+    color: #f8f9fa; /* Light text for contrast */
+    line-height: 1.8;
+    margin-top: 20px;
+    animation: fadeInUp 1.5s ease-out;
+    max-width: 850px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Roboto', sans-serif; /* Maintain sans-serif font for readability */
+    font-weight: 300; /* Lighter weight for paragraph */
+}
+
+/* Hover effect on text */
+.intro p:hover {
+    color: #ffdf00; /* Change color on hover */
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Add a light shadow on hover */
+}
+
+/* Highlighting important words */
+.highlight-heading{
+    color: #ffcc00; /* Soft gold for highlighting */
+    font-weight: 700;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    transition: all 0.3s ease; /* Smooth transition on hover */
+}
+
+/* Highlighting important words */
+.highlight {
+    color: #ffcc00; /* Soft gold for highlighting */
+    font-weight: 700;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    transition: all 0.3s ease; /* Smooth transition on hover */
+}
+
+/* Hover effect on highlighted text */
+.highlight:hover {
+    color: #a9101f; /* Subtle red to indicate interaction */
+    text-decoration: underline;
+}
+
+/* Highlight for extra emphasis */
+.highlight-highlight {
+    color: #a9101f; /* Deep red for strong emphasis */
+    font-weight: bold;
+    font-style: italic;
+}
+
+/* Mobile & Small Device Adjustments */
+@media (max-width: 768px) {
+    .intro {
+        padding: 30px 20px; /* Adjust padding for smaller screens */
+    }
+
+    /* Heading Style for Mobile */
+    .intro h2 {
+        font-size: 1.9rem; /* Reduce font size for smaller screens */
+        margin-bottom: 20px; /* Adjust spacing */
+    }
+
+    .highlight-heading{
+        font-size: 2rem;
+    }
+
+    /* Paragraph Style for Mobile */
+    .intro p {
+        font-size: 1.4rem; /* Smaller paragraph font size */
+        max-width: 700px; /* Reduce max-width of paragraph */
+    }
+
+    /* Highlight Style for Mobile */
+    .highlight {
+        font-size: 1.3rem; /* Smaller highlighted text */
+    }
+
+    /* Highlight for Extra Emphasis (Mobile) */
+    .highlight-highlight {
+        font-size: 1.2rem; /* Smaller emphasized text */
+    }
+}
+
+/* Adjustments for Very Small Screens */
+@media (max-width: 480px) {
+    .intro {
+        padding: 20px 15px; /* Reduce padding even further */
+    }
+
+    /* Heading Style for Very Small Screens */
+    .intro h2 {
+        font-size: 1.6rem; /* Further reduce font size */
+        margin-bottom: 15px; /* Adjust bottom margin */
+    }
+
+    .highlight-heading{
+        font-size: 1.8rem;
+    }
+
+    /* Paragraph Style for Very Small Screens */
+    .intro p {
+        font-size: 1rem; /* Smaller paragraph font size for very small screens */
+        max-width: 600px; /* Allow the paragraph to take up more width */
+    }
+
+    /* Highlight Style for Very Small Screens */
+    .highlight {
+        font-size: 1.1rem; /* Even smaller highlighted text */
+    }
+    
+}
+
+
+/* Future Vision Section */
+.future-vision {
+    background-color: #f9fafb; /* Lighter, neutral background for a clean look */
+    padding: 60px 20px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08); /* Softer shadow for depth */
+}
+
+/* Container Styling */
+.future-vision .container {
+    background-color: #ffffff; /* White background for the container */
+    padding: 40px;
+    border-radius: 10px; /* Rounded corners for the container */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Soft shadow for elegance */
+}
+
+/* Heading Styling */
+.future-vision h2 {
+    color: #005f87; /* Subtle and professional blue for the heading */
+    font-size: 2.8rem;
+    margin-bottom: 40px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    line-height: 1.2;
+    font-family: 'Poppins', sans-serif; /* Elegant sans-serif font */
+}
+
+/* Vision Items Layout */
+.vision-items {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    flex-wrap: wrap;
+    padding: 0 20px;
+}
+
+.vision-item {
+    position: relative;
+    background-color: #81c784; /* Subtle greenish tone for a fresh feel */
+    color: #000000;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Soft shadow for card */
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    text-align: center;
+    overflow: hidden;
+    flex: 1;
+    max-width: 300px;
+    margin-bottom: 30px;
+}
+
+/* Image Overlay: Keep images hidden initially */
+.future-vision .vision-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    transition: opacity 0.3s ease;
+    opacity: 0; /* Images are hidden initially */
+    z-index: 1; /* Ensure it's above the card color */
+}
+
+/* Hover Effect for Cards */
+.future-vision .vision-item:hover {
+    transform: translateY(-10px); /* Lift the card */
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15); /* Stronger shadow on hover */
+    background-color: #66bb6a; /* Subtle darkening of the card background on hover */
+}
+
+/* Add image hover effect */
+#item1:hover::before {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../static/images/Curiosity.png');
+    opacity: 1; /* Show image on hover */
+}
+
+#item2:hover::before {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../static/images/Character-defines.png');
+    opacity: 1; /* Show image on hover */
+}
+
+#item3:hover::before {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../static/images/Global-perspective.png');
+    opacity: 1; /* Show image on hover */
+}
+
+/* Title text within each vision item */
+.future-vision .vision-item h3 {
+    font-size: 1.7rem;
+    margin-bottom: 20px;
+    z-index: 2; /* Ensure title stays above the image */
+    position: relative;
+    font-weight: 600;
+    transition: transform 0.3s ease, color 0.3s ease;
+    color: #1b222a; /* Darker color for the text */
+}
+
+/* Paragraph Styling for vision items */
+.future-vision .vision-item p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    z-index: 2; /* Ensure paragraph stays above the image */
+    position: relative;
+    margin-top: 15px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    color: #1e2b39; /* Slightly muted text color for better readability */
+}
+
+/* Text shadow for better readability */
+.future-vision .vision-item:hover h3,
+.future-vision .vision-item:hover p {
+    text-shadow: 2px 2px 8px rgba(18, 18, 18, 0.3);
+}
+
+/* Hover effect on title */
+.vision-item:hover h3 {
+    color: #ffcc00; /* Change title color to gold on hover */
+    opacity: 0.9;
+}
+
+.vision-item:hover p {
+    color: #ffffff;
+    opacity: 0;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+    .vision-items {
+        flex-direction: row;
+        justify-content: space-evenly;
+        gap: 20px;
+    }
+
+    .vision-item {
+        max-width: 45%; /* Allow items to be wider on medium screens */
+        margin-bottom: 20px;
+    }
+
+    .future-vision h2 {
+        font-size: 2.4rem; /* Reduce font size slightly for medium screens */
+    }
+
+    .future-vision .vision-item h3 {
+        font-size: 1.5rem; /* Reduce title font size */
+    }
+
+    .future-vision .vision-item p {
+        font-size: 1rem; /* Adjust paragraph font size */
+    }
+}
+
+/* For Smaller Devices (Mobile) */
+@media (max-width: 768px) {
+    .vision-items {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .vision-item {
+        max-width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .future-vision h2 {
+        font-size: 1.8rem; /* Smaller font size for smaller screens */
+        margin-bottom: 30px;
+    }
+
+    .future-vision .vision-item h3 {
+        font-size: 1.2rem; /* Reduce title size */
+    }
+
+    .future-vision .vision-item p {
+        font-size: 0.8rem; /* Smaller paragraph font size */
+    }
+}
+
+/* For Very Small Devices (Mobile) */
+@media (max-width: 480px) {
+    .future-vision {
+        padding: 40px 15px; /* Reduce padding for very small screens */
+    }
+
+    .future-vision h2 {
+        font-size: 1.4rem; /* Further reduce font size */
+        margin-bottom: 20px; /* Adjust margin */
+    }
+
+    .future-vision .vision-item h3 {
+        font-size: 1.1rem; /* Smaller title font size */
+    }
+
+    .future-vision .vision-item p {
+        font-size: 0.75rem; /* Smaller paragraph font size */
+    }
+}
+
+/* Offerings Section */
+.offerings {
+    background-color: #f1f1f1; /* Updated background color */
+    padding: 40px 0;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Heading Style */
+.offerings h2 {
+    color: #007bff; /* Primary Blue */
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.8rem;
+    font-weight: 600; /* Bolder heading */
+}
+
+/* Offerings List Layout */
+.offerings-list {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    flex-wrap: wrap;
+    padding: 0 10px; /* Ensure some spacing around the content */
+}
+
+/* Individual Offering Card Styling */
+.offering {
+    flex: 1;
+    padding: 35px;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    max-width: 320px;
+    text-align: center;
+    transition: all 0.3s ease;
+    position: relative;
+    background: linear-gradient(135deg, #007bff, #00c6ff); /* Gradient background for the card */
+    color: #fff; /* Text color changes to white for better contrast */
+}
+
+/* Hover Effect for Offering Cards */
+.offering:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(135deg, #00c6ff, #007bff); /* Gradient inversion on hover */
+}
+
+/* Icon Styling */
+.offering i {
+    font-size: 3rem; /* Larger icons for impact */
+    color: #fff; /* Initial icon color is white */
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+}
+
+/* Hover Effect for Icons */
+.offering:hover i {
+    color: #ffd700; /* Change icon color to gold on hover */
+    transform: translateY(-5px); /* Slight lift on hover */
+}
+
+/* Title Styling */
+.offering h3 {
+    color: #fff; /* Title text color remains white */
+    margin-bottom: 20px;
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+/* Paragraph Styling */
+.offering p {
+    font-size: 1.1rem;
+    color: #f8f9fa; /* Light text for better readability */
+    line-height: 1.6;
+    margin-top: 10px;
+}
+
+/* Responsive Design Adjustments */
+@media (max-width: 768px) {
+    .offerings-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .offering {
+        max-width: 90%; /* Cards expand to fill more space on small screens */
+        margin-bottom: 20px; /* Space between cards */
+    }
+
+    .offerings h2 {
+        font-size: 2.4rem; /* Adjust heading size for smaller screens */
+    }
+
+    .offering i {
+        font-size: 2.5rem; /* Reduce icon size for smaller screens */
+    }
+}
+
+/* Beyond Academics Section */
+.beyond-academics {
+    background-color: #f9ded4; /* Soft Light Purple */
+    padding: 60px 0;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Heading Style */
+.beyond-academics h2 {
+    color: #007bff; /* New green color for heading */
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.8rem;
+    font-weight: 600; /* Bolder heading */
+}
+
+/* Beyond List Layout */
+.beyond-list {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    flex-wrap: wrap;
+    padding: 0 10px; /* Ensure some spacing around the content */
+}
+
+/* Individual Beyond Item Card Styling */
+.beyond-item {
+    flex: 1;
+    padding: 35px;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    max-width: 320px;
+    text-align: center;
+    transition: all 0.3s ease;
+    position: relative;
+    background: linear-gradient(135deg, #ffb3b3, #f5a5a5); /* Soft pastel gradient (light pinks) */
+    color: #fff; /* Text color changes to white for better contrast */
+}
+
+/* Hover Effect for Beyond Item Cards */
+.beyond-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(135deg, #f5a5a5, #ffb3b3); /* Gradient inversion with pastel tones */
+}
+
+/* Icon Styling */
+.beyond-item i {
+    font-size: 3rem; /* Larger icons for impact */
+    color: #fff; /* Initial icon color is white */
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+}
+
+/* Hover Effect for Icons */
+.beyond-item:hover i {
+    color: #007bff; /* Change icon color to gold on hover */
+    transform: translateY(-5px); /* Slight lift on hover */
+}
+
+/* Title Styling */
+.beyond-item h3 {
+    color: #1e2b39; /* Title text color remains white */
+    margin-bottom: 20px;
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+/* Paragraph Styling */
+.beyond-item p {
+    font-size: 1.1rem;
+    color: #2a4d74; /* Light text for better readability */
+    line-height: 1.6;
+    margin-top: 10px;
+}
+
+/* Responsive Design Adjustments */
+@media (max-width: 768px) {
+    .beyond-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .beyond-item {
+        max-width: 90%; /* Cards expand to fill more space on small screens */
+        margin-bottom: 20px; /* Space between cards */
+    }
+
+    .beyond-academics h2 {
+        font-size: 2.4rem; /* Adjust heading size for smaller screens */
+    }
+
+    .beyond-item i {
+        font-size: 2.5rem; /* Reduce icon size for smaller screens */
+    }
+}
+
+/* CTA Section */
+.cta {
+    background: linear-gradient(135deg, #28a745, #6dbf71); /* Green gradient for the background */
+    color: white;
+    padding: 80px 0;
+    text-align: center;
+    border-radius: 15px; /* Slight rounded corners for the section */
+}
+
+/* Heading Style */
+.cta h2 {
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+    font-weight: 700; /* Bold font for more emphasis */
+    letter-spacing: 1px; /* Slightly increased letter-spacing for better readability */
+}
+
+/* Paragraph Style */
+.cta p {
+    font-size: 1.3rem;
+    margin-bottom: 30px;
+    font-weight: 300; /* Lighter font weight for the paragraph text */
+    color: #f8f9fa; /* Light text for a better contrast against the green */
+    line-height: 1.8;
+}
+
+/* Button Style */
+.cta .btn-primary {
+    background-color: #f4f4f4; /* Light gray for the button */
+    border-color: #007bff; /* Blue border to make it stand out */
+    padding: 14px 30px; /* Slightly larger button for better visibility */
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.1rem;
+    border-radius: 50px; /* Rounded corners */
+    color: #007bff; /* Blue text to match the border */
+    text-decoration: none; /* Remove underline */
+    transition: all 0.3s ease; /* Smooth transition effect */
+    display: inline-block; /* Ensures the button stays inline */
+}
+
+/* Hover Effect for Button */
+.cta .btn-primary:hover {
+    background-color: #007bff; /* Darker blue background */
+    border-color: #0056b3; /* Darker blue border */
+    color: white; /* White text on hover */
+    cursor: pointer;
+    transform: translateY(-3px); /* Slight lift effect */
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .cta h2 {
+        font-size: 2.4rem; /* Slightly smaller heading for mobile */
+    }
+
+    .cta p {
+        font-size: 1.1rem; /* Slightly smaller text for mobile */
+    }
+
+    .cta .btn-primary {
+        font-size: 1rem; /* Adjust button text size for mobile */
+        padding: 12px 25px; /* Adjust button padding for mobile screens */
+    }
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .vision-items, .offerings-list, .beyond-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .vision-item, .offering, .beyond-item {
+        max-width: 90%;
+    }
+
+    .cta .btn-primary {
+        width: 100%;
+    }
+}

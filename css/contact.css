@@ -1,0 +1,232 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header Section */
+header {
+    background-color: #005f87; /* Sai Global Academy brand color */
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+header p {
+    font-size: 1.1rem;
+    margin-top: 10px;
+}
+
+/* Contact Form Section */
+.contact-form {
+    background-color: #ffffff;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.contact-form h2 {
+    font-size: 2.5rem;
+    color: #005f87;
+    margin-bottom: 20px;
+}
+
+.contact-form p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    color: #6c757d;
+}
+
+form {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.form-label {
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.form-control {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    margin-top: 5px;
+}
+
+.form-control:focus {
+    border-color: #005f87;
+    box-shadow: 0 0 5px rgba(0, 95, 135, 0.5);
+}
+
+button[type="submit"] {
+    background-color: #005f87;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #004d72;
+}
+
+/* Location Section */
+.location {
+    background-color: #f1f1f1;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.location h2 {
+    font-size: 2.5rem;
+    color: #005f87;
+    margin-bottom: 20px;
+}
+
+.location p {
+    font-size: 1.1rem;
+    color: #6c757d;
+    margin-bottom: 40px;
+}
+
+.map iframe {
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Contact Details Section */
+.contact-details {
+    background-color: #005f87;
+    padding: 60px 20px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.contact-details h2 {
+    font-size: 2.5rem;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.contact-details p {
+    font-size: 1.1rem;
+    color: #ffffff;
+    margin-bottom: 4px;
+}
+
+.contact-info {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #f2f2f2;
+}
+
+/* Style for Address Heading */
+.contact-details h4 {
+    font-weight: bold;
+    color: #ffffff;
+    font-size: 1.5rem;  /* Optional: Adjust font size if needed */
+    margin-bottom: 10px; /* Optional: Adjust margin for spacing */
+}
+
+.contact-details h4 i {
+    color: #ffffff; /* Ensure the icon inside <h4> is also white */
+    margin-right: 10px; /* Optional: Adjust space between the icon and the text */
+}
+
+
+.contact-info i {
+    font-size: 1.5rem;
+    margin-right: 10px;
+    color: #005f87;
+}
+
+/* Contact info text */
+.contact-info a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+    color: darkorange;
+}
+
+.contact-info strong {
+    color: #d1d1d1;
+}
+
+.address {
+    font-size: 1rem;
+    color: #ffffff;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .contact-form h2 {
+        font-size: 2rem;
+    }
+
+    .contact-form p {
+        font-size: 1rem;
+    }
+
+    .location h2 {
+        font-size: 2rem;
+    }
+
+    .cta h2 {
+        font-size: 2rem;
+    }
+
+    .cta p {
+        font-size: 1rem;
+    }
+
+    .form-label {
+        font-size: 1rem;
+    }
+
+    .form-control {
+        font-size: 1rem;
+    }
+
+    button[type="submit"] {
+        padding: 10px 25px;
+        font-size: 1rem;
+    }
+
+    .cta .btn-primary {
+        font-size: 1rem;
+    }
+
+    .contact-details .row {
+        flex-direction: column;
+    }
+
+    .contact-details .col-md-6 {
+        margin-bottom: 30px;
+    }
+}

@@ -1,0 +1,179 @@
+/* General Page Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa; /* Light gray background for the page */
+    margin: 0;
+    padding: 0;
+    font-size: 1.2rem; /* Increased base font size */
+}
+
+/* Power of SGA Section */
+.power-sga {
+    background-color: #ffffff; /* White background */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+    padding-top: 80px; /* Increased padding for top */
+    padding-bottom: 40px; /* Reduced padding for bottom */
+}
+
+.power-sga h1 {
+    font-weight: bold;
+    color: #007bff; /* Primary blue color */
+    font-size: 3rem; /* Larger heading font */
+    margin-bottom: 30px; /* Increased space between title and content */
+}
+
+.power-sga h2 {
+    font-weight: 600;
+    color: #28a745; /* Green for subheadings */
+    font-size: 2.5rem; /* Larger subheading font */
+    margin-top: 50px; /* Increased space before section headings */
+    margin-bottom: 30px; /* Increased space after section headings */
+}
+
+.power-sga p {
+    font-size: 1.25rem; /* Larger paragraph font */
+    color: #6c757d; /* Greyish text */
+    line-height: 1.8;
+    margin-bottom: 25px; /* Increased space between paragraphs */
+}
+
+/* Button Styling */
+.btn-success {
+    background-color: #28a745; /* Green */
+    color: #ffffff;
+    padding: 15px 30px; /* Increased padding for buttons */
+    border-radius: 40px; /* Slightly rounded corners for a modern look */
+    font-size: 1.3rem; /* Larger font for the button */
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+}
+
+.btn-success:hover {
+    background-color: #218838; /* Darker green on hover */
+    cursor: pointer;
+}
+
+/* List Group Styling */
+.list-group-item {
+    font-size: 1.2rem; /* Larger font size for list items */
+    border: none;
+    padding: 20px; /* Increased padding for list items */
+    background-color: #f8f9fa; /* Light grey background */
+    border-radius: 8px;
+    margin-bottom: 15px; /* Increased space between items */
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover Effect: */
+.list-group-item:hover {
+    background-color: #e9ecef; /* Light hover background */
+    transform: translateY(-8px); /* Lift effect on hover */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15); /* Add shadow for depth */
+}
+
+/* Hover Effect on Active List Group Item */
+.list-group-item:active {
+    transform: translateY(0); /* Reset the lift effect on click */
+    box-shadow: none; /* Remove the shadow on active */
+}
+
+/* List Group Icon Styling */
+.list-group-item i {
+    font-size: 1.6rem; /* Larger icons */
+    margin-right: 20px; /* Increased space between icon and text */
+    color: inherit; /* Inherit the text color for the icon */
+    transition: color 0.3s ease;
+}
+
+/* Change Icon Color on Hover */
+.list-group-item:hover i {
+    color: inherit; /* Retain the inherited color */
+}
+
+/* Lead Class */
+.lead {
+    font-size: 1.8rem;
+    font-weight: bolder;
+}
+
+/* Centering the image and controlling its max-width */
+.img-fluid {
+    width: 80%; /* Make the image fully responsive */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 80%; /* Max width for larger screens */
+}
+
+/* Custom max-width for the image on different screen sizes */
+@media (max-width: 1200px) {
+    .img-fluid {
+        max-width: 70%; /* Decrease max-width on large screens */
+    }
+}
+
+@media (max-width: 992px) {
+    .img-fluid {
+        max-width: 80%; /* Decrease max-width for tablets */
+    }
+}
+
+@media (max-width: 768px) {
+    .img-fluid {
+        max-width: 100%; /* Full width on mobile */
+    }
+}
+
+/* Call to Action Section */
+h2.display-4 {
+    font-size: 3rem; /* Larger font size for call to action */
+    font-weight: 700;
+    color: #007bff; /* Primary blue */
+    margin-bottom: 30px; /* Increased margin for better spacing */
+}
+
+/* Section Titles Styling */
+.text-info {
+    color: #7a17b8 !important; /* Light blue for info sections */
+    font-size: 1.5rem; /* Larger font for section titles */
+}
+
+.text-success {
+    color: #7a17b8 !important; /* Green color for success sections */
+    font-size: 1.5rem; /* Larger font for section titles */
+}
+
+.text-warning {
+    color: #7a17b8 !important; /* Purple color for warning sections */
+    font-size: 1.5rem; /* Larger font for section titles */
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+    .power-sga h1 {
+        font-size: 2.5rem; /* Adjust heading size on mobile */
+    }
+
+    .power-sga h2 {
+        font-size: 2rem;
+    }
+
+    .list-group-item {
+        font-size: 1.1rem; /* Slightly smaller font on mobile */
+        padding: 15px;
+    }
+
+    .btn-success {
+        font-size: 1.1rem;
+        padding: 12px 24px;
+    }
+
+    .text-warning {
+        font-size: 1.3rem; /* Increased size for mobile */
+    }
+
+    #footer-container {
+        padding: 30px;
+    }
+}

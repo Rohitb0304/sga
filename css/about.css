@@ -1,0 +1,208 @@
+/* General Page Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* About Section */
+.about-us {
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 50px;
+    border-radius: 10px;
+    padding: 50px 20px;
+}
+
+.about-us h1 {
+    font-weight: bold;
+    color: #007bff;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.about-us p {
+    font-size: 1.15rem;
+    color: #6c757d;
+    line-height: 1.8;
+    margin-bottom: 0;
+}
+
+/* Mission & Vision Containers */
+.mission-container,
+.vision-container {
+    background-color: #ffffff;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    padding: 40px 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.mission-container:hover,
+.vision-container:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.mission-container i,
+.vision-container i {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.mission-container i {
+    color: #28a745;
+}
+
+.vision-container i {
+    color: #007bff;
+}
+
+.mission-container h2,
+.vision-container h2 {
+    font-weight: 700;
+    font-size: 1.75rem;
+    margin-bottom: 20px;
+}
+
+.mission-container h2 {
+    color: #28a745;
+}
+
+.vision-container h2 {
+    color: #007bff;
+}
+
+/* Why Choose Us Section */
+.why-choose-us {
+    background-color: #e9f7ec;
+    padding: 60px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.why-choose-us h2 {
+    color: #28a745;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.why-choose-us ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.why-choose-us li {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+.why-choose-us li:hover {
+    transform: translateX(10px);
+}
+
+.why-choose-us li i {
+    margin-right: 15px;
+    font-size: 1.3rem;
+    color: #28a745;
+}
+
+.why-choose-us li strong {
+    color: #333;
+}
+
+/* Examinations Section */
+.exams {
+    background-color: #d9f0ff;
+    padding: 60px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.exams h2 {
+    color: #007bff;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.exams .list-group-item {
+    font-size: 1.1rem;
+    border: none;
+    padding: 15px;
+    background-color: #f8f9fa;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.exams .list-group-item:hover {
+    background-color: #e9ecef;
+    transform: translateX(10px);
+}
+
+.exams .list-group-item i {
+    margin-right: 15px;
+    font-size: 1.3rem;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 767px) {
+    .about-us {
+        margin-top: 30px;
+        padding: 40px 15px;
+    }
+
+    .about-us h1 {
+        font-size: 2rem;
+    }
+
+    .mission-container,
+    .vision-container {
+        padding: 25px 15px;
+    }
+
+    .mission-container i,
+    .vision-container i {
+        font-size: 2.5rem;
+    }
+
+    .mission-container h2,
+    .vision-container h2 {
+        font-size: 1.5rem;
+    }
+
+    .mission-container p,
+    .vision-container p {
+        font-size: 1rem;
+    }
+
+    .why-choose-us h2 {
+        font-size: 1.75rem;
+    }
+
+    .why-choose-us li {
+        font-size: 1rem;
+    }
+
+    .exams h2 {
+        font-size: 1.75rem;
+    }
+
+    .exams .list-group-item {
+        font-size: 1rem;
+    }
+
+    .exams .list-group-item i {
+        font-size: 1.2rem;
+    }
+}

@@ -1,0 +1,215 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7f6;
+    color: #333; /* Darker text for better readability */
+    margin: 0;
+    padding: 0;
+}
+
+/* Introduction Section */
+h2 {
+    color: #007bff;
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+ul.tech-list {
+    list-style: none; /* Remove default bullets */
+    padding: 0;
+    margin: 0;
+}
+
+ul.tech-list .list-group-item {
+    font-size: 1.4rem; /* Slightly larger text */
+    color: #333;
+    border: 1px solid #ddd; /* Light border around list items */
+    border-radius: 8px;
+    margin-bottom: 10px; /* Space between list items */
+    padding: 15px; /* Padding for list items */
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s ease; /* Smooth background change on hover */
+}
+
+ul.tech-list .list-group-item:hover {
+    background-color: #007bff; /* Highlight color on hover */
+    color: #fff; /* Change text color on hover */
+    border-color: #0056b3;
+}
+
+ul.tech-list .list-group-item i {
+    font-size: 1.5rem; /* Increase icon size */
+    color: #007bff; /* Icon color matching header */
+    margin-right: 15px; /* Space between icon and text */
+}
+
+ul.tech-list .list-group-item:hover i {
+    color: #fff; /* Change icon color to white on hover */
+}
+
+
+/* Why Choose Our Courses Section */
+.card {
+    border: none;
+    border-radius: 15px;
+    background-color: #ffffff;
+    transition: all 0.3s ease;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+    transform: translateY(-5px);
+}
+
+.card-body {
+    padding: 30px;
+    text-align: center;
+}
+
+.card-title {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #007bff;
+    margin-bottom: 15px;
+}
+
+.card-text {
+    font-size: 1.3rem;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Cards Color Customization */
+.card-1 {
+    background-color: #ff9800; /* Orange */
+    color: white;
+}
+
+.card-2 {
+    background-color: #4caf50; /* Green */
+    color: white;
+}
+
+.card-3 {
+    background-color: #2196f3; /* Blue */
+    color: white;
+}
+
+.card-4 {
+    background-color: #e91e63; /* Pink */
+    color: white;
+}
+
+.card-5 {
+    background-color: #9c27b0; /* Purple */
+    color: white;
+}
+
+/* Icons */
+.card i {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.card .card-body {
+    padding: 40px 30px;
+}
+
+.card-body i {
+    font-size: 50px;
+}
+
+/* Courses Section */
+.card-body {
+    padding: 30px;
+    text-align: center;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #007bff;
+    margin-bottom: 15px;
+}
+
+.card {
+    border: none;
+    border-radius: 15px;
+    background-color: #ffffff;
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+}
+
+/* Call to Action Button */
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 15px 40px;
+    border-radius: 50px;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #004085;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.8rem;
+    }
+
+    header p {
+        font-size: 1.2rem;
+    }
+
+    h2 {
+        font-size: 2.2rem;
+    }
+
+    .card-title {
+        font-size: 1.2rem;
+    }
+
+    .btn-primary {
+        font-size: 1.3rem;
+        padding: 12px 30px;
+    }
+}
+
+@media (max-width: 576px) {
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    header p {
+        font-size: 1.1rem;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    .card-title {
+        font-size: 1rem;
+    }
+
+    .btn-primary {
+        font-size: 1.2rem;
+        padding: 10px 25px;
+    }
+}

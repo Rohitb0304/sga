@@ -1,0 +1,86 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+}
+
+/* Header Section */
+header {
+    background-color: #007bff;
+}
+
+header h1 {
+    font-size: 3rem;
+}
+
+header p {
+    font-size: 1.25rem;
+}
+
+/* Blog Introduction Section */
+section.bg-light {
+    background-color: #f1f1f1;
+}
+
+h2, h3 {
+    color: #007bff;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    padding: 5px 0;
+}
+
+/* Card Styles */
+.card {
+    border: none;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.card-body {
+    padding: 20px;
+    text-align: center;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    color: #007bff;
+}
+
+.card-text {
+    font-size: 1rem;
+}
+
+.card-img-top {
+    border-radius: 10px;
+}
+
+/* Subscribe Section */
+section.bg-light p {
+    font-size: 1.125rem;
+}
+
+form input[type="email"] {
+    max-width: 300px;
+    padding: 10px;
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: #28a745;
+    border-color: #28a745;
+}
+
+form button:hover {
+    background-color: #218838;
+    border-color: #1e7e34;
+}
+
+/* Footer Styling */
+
